@@ -10,7 +10,7 @@ RazorPages
 *.user
 *.userosscache
 *.sln.docstates
-
+*.Vscode
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
