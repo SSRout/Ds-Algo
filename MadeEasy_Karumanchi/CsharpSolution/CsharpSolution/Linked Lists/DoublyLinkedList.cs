@@ -9,8 +9,7 @@ namespace CsharpSolution.Linked_Lists
      * Doubly Linked list with 
      * Prepend
      * Append
-     * InsertAfter
-     * InsertBefore
+     * InsertAtMiddle
      * Search Node
      * Delete node
      * Length of list
@@ -74,6 +73,46 @@ namespace CsharpSolution.Linked_Lists
             current.next = temp;
             temp.prev = current;
         }
+        #endregion
+        public void InsertAtMiddle(T data,int position)
+        {
+            int k = 1;
+            DoubleNode<T> newNode = new DoubleNode<T>(data);
+            if (position == 1)
+            {
+                newNode.next = head;//insert at begining First Time
+                newNode.prev = null;
+                if (head != null)
+                {
+                    head.prev = newNode;
+                }
+                head = newNode;
+                return;
+            }
+
+            DoubleNode<T> temp = head;
+            while((k<position) && (temp.next != null))
+            {
+                temp = temp.next;
+                k++;
+            }
+
+            if (k != position-1)
+            {
+                Console.WriteLine($"Poisition not found at position {position}");
+                return;
+            }
+            newNode.next = temp.next;
+            newNode.prev = temp;
+            if(temp.next!=null)
+            {
+                temp.next.prev = newNode;
+            }
+            temp.next = newNode;
+            return;
+        }
+        #region Insert At Middle
+
         #endregion
 
         #region Print List
