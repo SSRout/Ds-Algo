@@ -15,9 +15,13 @@ namespace CsharpSolution
                 int options = int.Parse(Console.ReadLine());
                 switch (options)
                 {
+                    #region Exit
                     case 0:
                         Console.WriteLine("---Happy Learning See You Latter---");
                         break;
+                    #endregion
+
+                    #region Single Linked List
                     case 1:
 
                         Console.WriteLine("--------1.Single Linked List--------");
@@ -39,8 +43,9 @@ namespace CsharpSolution
                         list1.PrintList();
                         list1.SearchNode("D");
                         goto Menu;
+                    #endregion
 
-
+                    #region Double Linked List
                     case 2:
                         Console.WriteLine("--------2.Doubly Linked List--------");
                         DoublyLinkedList<int> dlist = new DoublyLinkedList<int>();
@@ -48,16 +53,19 @@ namespace CsharpSolution
                         //dlist.Append(40);
                         //dlist.Prepend(20);
                         dlist.Prepend(10);
-                        dlist.InsertAtMiddle(60,1);
-                        dlist.InsertAtMiddle(70,4);
+                        dlist.InsertAtMiddle(60, 1);
+                        dlist.InsertAtMiddle(70, 4);
                         dlist.PrintList();
                         goto Menu;
 
+                    #endregion
 
+                    #region Menu
                     default:
                         Console.Clear();
                         Console.WriteLine("Invalid Option Typed");
                         goto Menu;
+                        #endregion
                 }
             }
             catch (Exception ex)
