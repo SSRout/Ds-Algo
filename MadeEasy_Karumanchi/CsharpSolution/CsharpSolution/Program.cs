@@ -55,6 +55,8 @@ namespace CsharpSolution
                         dlist.InsertAtMiddle(70,3);
                         dlist.PrintList();
                         dlist.Delete(3);
+                        dlist.NodeSearch(40);
+                        dlist.NodeCount();
                         dlist.PrintList();
                         goto Menu;
 

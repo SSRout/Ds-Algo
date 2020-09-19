@@ -160,6 +160,49 @@ namespace CsharpSolution.Linked_Lists
         }
         #endregion
 
+        #region Node Count
+        public void NodeCount()
+        {
+            DoubleNode<T> temp = head;
+            if (head == null)
+            {
+                Console.Write("\nEmpty List");
+                return;
+            }
+            int count = 0;
+            while (temp.next != null)
+            {
+                temp = temp.next;
+                count += 1;
+            }
+            Console.WriteLine($"List Length is {count+1}");
+        }
+        #endregion
+
+        #region Node Search
+        public void NodeSearch(T data)
+        {
+            DoubleNode<T> temp = head;
+            if (head == null)
+            {
+                Console.Write("\nEmpty List");
+                return;
+            }
+            int count = 1;
+            while (temp != null)
+            {
+                if (temp.data.Equals(data))
+                {
+                    Console.WriteLine($"{data} found at index {count}");
+                    return;
+                }
+                temp = temp.next;
+                count += 1;
+            }
+            Console.WriteLine($"{data} Not  found in List");
+        }
+        #endregion
+
         #region Print List
         public void PrintList()
         {
