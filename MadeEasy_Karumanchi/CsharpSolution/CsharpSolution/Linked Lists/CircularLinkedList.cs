@@ -80,6 +80,48 @@ namespace CsharpSolution.Linked_Lists
         }
         #endregion
 
+        #region Insert At Position
+        public void InsertAt(T data,int pos)
+        {
+            if (pos == 1)
+            {
+                Prepend(data);
+            }
+            else
+            {
+                CList<T> newNode = new CList<T>(data);
+                CList<T> temp = head;
+                int k = 1;
+                while (temp.next != head)
+                {
+                    if (k == pos-1)
+                    {
+                        newNode.next = temp.next;
+                        temp.next = newNode;
+                        return;
+                    }
+                    temp=temp.next;
+                    k += 1;
+                }
+                if(temp.next==head && k == pos-1)
+                {
+                    newNode.next = temp.next;
+                    temp.next = newNode;
+                    return;
+                }
+                Console.WriteLine("Position invalid");
+            }
+
+        }
+        #endregion
+
+        #region Delete Node
+        public void Delete(int data)
+        {
+
+        }
+        #endregion
+
         #region Print Count
         public void NodeSearch(T data)
         {

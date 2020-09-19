@@ -52,7 +52,7 @@ namespace CsharpSolution
                         dlist.Append(40);
                         dlist.Prepend(10);
                         dlist.InsertAtMiddle(60, 1);
-                        dlist.InsertAtMiddle(70,3);
+                        dlist.InsertAtMiddle(70, 3);
                         dlist.PrintList();
                         dlist.Delete(3);
                         dlist.NodeSearch(40);
@@ -62,17 +62,20 @@ namespace CsharpSolution
 
                     #endregion
 
+                    #region Circular Linked List
                     case 3:
                         Console.WriteLine("--------3.Circular Linked List--------");
-                        CircularLinkedList<string> clist = new CircularLinkedList<string>();                     
+                        CircularLinkedList<string> clist = new CircularLinkedList<string>();
                         clist.Prepend("A");
                         clist.Append("B");
                         clist.Prepend("C");
                         clist.Append("D");
+                        clist.InsertAt("E", 4);
                         clist.NodeSearch("A");
                         clist.PrintList();
                         clist.NodeCount();
                         goto Menu;
+                    #endregion
 
                     #region Menu
                     default:
