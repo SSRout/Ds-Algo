@@ -49,12 +49,12 @@ namespace CsharpSolution
                     case 2:
                         Console.WriteLine("--------2.Doubly Linked List--------");
                         DoublyLinkedList<int> dlist = new DoublyLinkedList<int>();
-                        //dlist.Append(30);
-                        //dlist.Append(40);
-                        //dlist.Prepend(20);
+                        dlist.Append(40);
                         dlist.Prepend(10);
                         dlist.InsertAtMiddle(60, 1);
-                        dlist.InsertAtMiddle(70, 4);
+                        dlist.InsertAtMiddle(70,3);
+                        dlist.PrintList();
+                        dlist.Delete(3);
                         dlist.PrintList();
                         goto Menu;
 

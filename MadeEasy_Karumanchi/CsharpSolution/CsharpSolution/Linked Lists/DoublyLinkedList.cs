@@ -74,7 +74,9 @@ namespace CsharpSolution.Linked_Lists
             temp.prev = current;
         }
         #endregion
-        public void InsertAtMiddle(T data,int position)
+
+        #region Insert At Middle or Insert At Position
+        public void InsertAtMiddle(T data, int position)
         {
             int k = 1;
             DoubleNode<T> newNode = new DoubleNode<T>(data);
@@ -91,33 +93,81 @@ namespace CsharpSolution.Linked_Lists
             }
 
             DoubleNode<T> temp = head;
-            while((k<position) && (temp.next != null))
+            while ((k < position-1) && (temp.next != null))
             {
                 temp = temp.next;
                 k++;
             }
 
-            if (k != position-1)
+            if (k < position-1)
             {
                 Console.WriteLine($"Poisition not found at position {position}");
                 return;
             }
             newNode.next = temp.next;
             newNode.prev = temp;
-            if(temp.next!=null)
+            if (temp.next != null)
             {
                 temp.next.prev = newNode;
             }
             temp.next = newNode;
             return;
         }
-        #region Insert At Middle
+        #endregion
 
+        #region Delete Node
+        public void Delete(int position)
+        {
+            int k = 1;
+            if (head == null)
+            {
+                Console.WriteLine("List Is Empty");
+                return;
+            }
+            //First Node
+            if (position == 1)
+            {
+                head = head.next;
+                if (head != null)
+                {
+                    head.prev = null;
+                    return;
+                }
+            }
+           
+            DoubleNode<T> temp = head;
+            DoubleNode<T> temp2 = null;
+            while (temp.next!= null)
+            {
+                k++;
+                if (position == k)
+                {
+                    temp2 = temp.next.prev;
+                    if (temp.next.next != null)
+                    {
+                        temp.next = temp.next.next;
+                        temp.next.prev = temp2.prev;
+                    }
+                    else
+                    {
+                        temp.next = null;
+                    }
+                    return;
+                }
+                temp = temp.next;
+            }
+
+        }
         #endregion
 
         #region Print List
         public void PrintList()
         {
+            if (head == null)
+            {
+                Console.WriteLine("List Is Empty");
+                return;
+            }
             DoubleNode<T> node = head;
             while (node!= null)
             {
