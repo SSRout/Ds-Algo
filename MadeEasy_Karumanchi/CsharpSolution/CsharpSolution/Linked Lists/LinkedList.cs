@@ -12,6 +12,8 @@ namespace CsharpSolution.Linked_Lists
      * Delete node
      * Length of list
      * Print List
+     * Time Complexity: O(n), for scanning the complete list of size n.
+     * Space Complexity: O(1), for temporary variable.
     */
 
 

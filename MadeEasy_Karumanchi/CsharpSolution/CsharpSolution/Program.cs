@@ -62,6 +62,18 @@ namespace CsharpSolution
 
                     #endregion
 
+                    case 3:
+                        Console.WriteLine("--------3.Circular Linked List--------");
+                        CircularLinkedList<string> clist = new CircularLinkedList<string>();                     
+                        clist.Prepend("A");
+                        clist.Append("B");
+                        clist.Prepend("C");
+                        clist.Append("D");
+                        clist.NodeSearch("A");
+                        clist.PrintList();
+                        clist.NodeCount();
+                        goto Menu;
+
                     #region Menu
                     default:
                         Console.Clear();
