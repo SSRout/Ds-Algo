@@ -74,6 +74,8 @@ namespace CsharpSolution
                         clist.NodeSearch("A");
                         clist.PrintList();
                         clist.NodeCount();
+                        clist.Delete("D");
+                        clist.PrintList();
                         goto Menu;
                     #endregion
 

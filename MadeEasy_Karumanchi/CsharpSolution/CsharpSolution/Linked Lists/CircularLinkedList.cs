@@ -116,9 +116,36 @@ namespace CsharpSolution.Linked_Lists
         #endregion
 
         #region Delete Node
-        public void Delete(int data)
+        public void Delete(T data)
         {
-
+            CList<T> temp = head;
+            if (head.data.Equals(data))
+            {
+                if (head.next.data.Equals(data))
+                {
+                    head = null;
+                }
+                else
+                {
+                    while(temp.next != head)
+                    {
+                        temp = temp.next;
+                    }
+                    head = head.next;
+                    temp.next = head;
+                }
+                return;
+            }
+            CList<T> current = head;
+            while (temp.next != head)
+            {
+               
+                if (temp.next.data.Equals(data))
+                {
+                    temp.next = temp.next.next;
+                }
+                temp = temp.next;
+            }
         }
         #endregion
 
