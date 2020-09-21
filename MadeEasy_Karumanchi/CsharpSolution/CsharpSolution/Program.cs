@@ -81,7 +81,7 @@ namespace CsharpSolution
 
                     #region Detect loop Using HasSet
                     case 4:
-                        Console.WriteLine("--------4.XOR Linked List--------");
+                        Console.WriteLine("--------4.Detect loop Using HasSet--------");
                         DetectLoopInLinkedListUsingHasSet<int> lop1 = new DetectLoopInLinkedListUsingHasSet<int>();
                         lop1.Push(10);
                         lop1.Push(20);
