@@ -74,8 +74,23 @@ namespace CsharpSolution
                         clist.NodeSearch("A");
                         clist.PrintList();
                         clist.NodeCount();
-                        clist.Delete("D");
+                        clist.Delete("E");
                         clist.PrintList();
+                        goto Menu;
+                    #endregion
+
+                    #region Detect loop Using HasSet
+                    case 4:
+                        Console.WriteLine("--------4.XOR Linked List--------");
+                        DetectLoopInLinkedListUsingHasSet<int> lop1 = new DetectLoopInLinkedListUsingHasSet<int>();
+                        lop1.Push(10);
+                        lop1.Push(20);
+                        lop1.Push(30);
+                        lop1.Push(40);
+                        lop1.Push(50);
+                        /*Create loop for testing */
+                        lop1.head.next.next.next.next = lop1.head;
+                        lop1.DetectLoop();
                         goto Menu;
                     #endregion
 

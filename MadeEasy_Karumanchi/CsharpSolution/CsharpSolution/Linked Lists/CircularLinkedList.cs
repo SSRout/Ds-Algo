@@ -136,7 +136,6 @@ namespace CsharpSolution.Linked_Lists
                 }
                 return;
             }
-            CList<T> current = head;
             while (temp.next != head)
             {
                
