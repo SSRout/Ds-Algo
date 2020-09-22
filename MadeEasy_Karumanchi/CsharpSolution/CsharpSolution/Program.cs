@@ -17,7 +17,7 @@ namespace CsharpSolution
                 {
                     #region Exit
                     case 0:
-                        Console.WriteLine("---Happy Learning See You Latter---");
+                        Console.WriteLine("---✔️🍺 Happy Coding 👍😊---\n---Happy Learning See You Latter---");
                         break;
                     #endregion
 
@@ -123,15 +123,33 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Palindrome Check Of Linked List Using Stack
                     case 7:
-                        Console.WriteLine("--------7.--------");
+                        Console.WriteLine("--------7.Palindrome Check Of Linked List Using Stack--------");
+                        CheckLinkedListPalindromeUsingStack<int> pal1 = new CheckLinkedListPalindromeUsingStack<int>();
+                        pal1.Push(40);
+                        pal1.Push(30);
+                        pal1.Push(20);
+                        pal1.Push(30);
+                        pal1.Push(40);
+                        pal1.Print();
+                        pal1.CheckPalindrome();
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Reverse LinkedList
                     case 8:
-                        Console.WriteLine("--------8.--------");
+                        Console.WriteLine("--------8.Reverse LinkedList--------");
+                        ReverseLinkedList<char> rev = new ReverseLinkedList<char>();
+                        char[] val = { 'a', 'b', 'c' };
+                        for (int i = 0; i < val.Length; i++)
+                        {
+                            rev.Push(val[i]);
+                        }
+                        rev.PrintList();
+                        rev.ReverseList();
+                        Console.WriteLine("After Reverse");
+                        rev.PrintList();
                         goto Menu;
                     #endregion
 
