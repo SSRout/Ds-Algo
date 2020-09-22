@@ -23,6 +23,10 @@ namespace CsharpSolution.Linked_Lists
          */
 
         public Node_4<T> head;
+        
+        
+        
+        
         public DetectLoopInLinkedListUsingHasSet()
         {
             this.head = null;

@@ -94,6 +94,21 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
+                    #region Detect Loop With Brute Force Approach
+                    case 5:
+                        Console.WriteLine("--------4.Detect loop Using HasSet--------");
+                        DetectLoopInLinkedListUsingBF<string> lop2 = new DetectLoopInLinkedListUsingBF<string>();
+                        lop2.Insert("A");
+                        lop2.Insert("B");
+                        lop2.Insert("C");
+                        lop2.Insert("D");
+                        lop2.Insert("E");
+                        /*Create loop for testing */
+                        lop2.head.next.next.next = lop2.head;
+                        Console.WriteLine(lop2.DetectLoop());
+                        goto Menu;
+                    #endregion
+
                     #region Menu
                     default:
                         Console.Clear();
