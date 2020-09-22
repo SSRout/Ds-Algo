@@ -6,6 +6,10 @@ namespace CsharpSolution.Linked_Lists
 {
     public class DetectLoopInLinkedListUsingBF<T>
     {
+        /*
+         * Time complexity:O(n).Only one traversal of the loop is needed.
+         * Auxilary Space:O(1)
+         */
         public class Node
         {
             public T data;

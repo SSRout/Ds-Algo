@@ -96,7 +96,7 @@ namespace CsharpSolution
 
                     #region Detect Loop With Brute Force Approach
                     case 5:
-                        Console.WriteLine("--------4.Detect loop Using HasSet--------");
+                        Console.WriteLine("--------5.Detect loop Using Brute Force Approach--------");
                         DetectLoopInLinkedListUsingBF<string> lop2 = new DetectLoopInLinkedListUsingBF<string>();
                         lop2.Insert("A");
                         lop2.Insert("B");
@@ -106,6 +106,56 @@ namespace CsharpSolution
                         /*Create loop for testing */
                         lop2.head.next.next.next = lop2.head;
                         Console.WriteLine(lop2.DetectLoop());
+                        goto Menu;
+                    #endregion
+
+                    #region Detect Loop Using  Floyd’s Cycle
+                    case 6:
+                        Console.WriteLine("--------6.Detect loop Using Floyd’s Cycle--------");
+                        DetectLoopInLinkedListUsing_FloydCycle<int> lop3 = new DetectLoopInLinkedListUsing_FloydCycle<int>();
+                        lop3.push(40);
+                        lop3.push(30);
+                        lop3.push(20);
+                        lop3.push(10);
+                        /*Create loop for testing */
+                        lop3.head.next.next.next.next = lop3.head;
+                        lop3.DetectLoop();
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 7:
+                        Console.WriteLine("--------7.--------");
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 8:
+                        Console.WriteLine("--------8.--------");
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 9:
+                        Console.WriteLine("--------9.--------");
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 10:
+                        Console.WriteLine("--------10.--------");
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 11:
+                        Console.WriteLine("--------11.--------");
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 12:
+                        Console.WriteLine("--------12.--------");
                         goto Menu;
                     #endregion
 
