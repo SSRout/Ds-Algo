@@ -41,12 +41,12 @@ namespace CsharpSolution.Linked_Lists
             }
 
             /* Save curr->next node for recursive call */
-            Node next1 = curr.next;
+            Node next = curr.next;
 
             /* and update next ..*/
             curr.next = prev;
 
-            reverseUtil(next1, curr);
+            reverseUtil(next, curr);
             return head;
         }
 

@@ -1,4 +1,5 @@
 ﻿using CsharpSolution.Linked_Lists;
+using Microsoft.VisualBasic.CompilerServices;
 using System;
 
 namespace CsharpSolution
@@ -166,15 +167,24 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Remove Duplicate From Sorted LinkedList
                     case 10:
-                        Console.WriteLine("--------10.--------");
+                        Console.WriteLine("--------10.Remove Duplicate From Sorted LinkedList--------");
+                        RemoveDuplicateFromSortedLinkedList dct = new RemoveDuplicateFromSortedLinkedList();
+                        int[] arr = { 10, 10, 20, 30, 30, 40 };
+                        foreach (var i in arr)
+                            dct.Insert(i);
+                        dct.Print();
+                        dct.RemoveDuplicate();
+                        dct.Print();
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Print LinkedList From End
                     case 11:
-                        Console.WriteLine("--------11.--------");
+                        Console.WriteLine("--------11.Print LinkedList From End--------");
+                        PrintLinkedListFromEnd p = new PrintLinkedListFromEnd();
+                        p.Print();
                         goto Menu;
                     #endregion
 
