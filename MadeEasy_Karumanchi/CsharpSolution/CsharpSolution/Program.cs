@@ -180,17 +180,80 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region Print LinkedList From End
+                    #region Removing Duplicate From Unsorted LinkedList using Hashing
                     case 11:
-                        Console.WriteLine("--------11.Print LinkedList From End--------");
+                        Console.WriteLine("--------11.Removing Duplicate From Unsorted LinkedList using Hashing--------");
+                        RemovingDuplicateFromUnsortedLinkedList dct1 = new RemovingDuplicateFromUnsortedLinkedList();
+                        int[] lst = { 10, 30, 20, 30, 50, 10 };
+                        foreach (var i in lst)
+                            dct1.Push(i);
+                        dct1.Print();
+                        dct1.RemoveDuplicate();
+                        dct1.Print();
+                        goto Menu;
+                    #endregion
+
+                    #region Print LinkedList From End
+                    case 12:
+                        Console.WriteLine("--------12.Print LinkedList From End--------");
                         PrintLinkedListFromEnd p = new PrintLinkedListFromEnd();
                         p.Print();
                         goto Menu;
                     #endregion
 
                     #region MyRegion
-                    case 12:
-                        Console.WriteLine("--------12.--------");
+                    case 13:
+                        Console.WriteLine("--------13.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 14:
+                        Console.WriteLine("--------14.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 15:
+                        Console.WriteLine("--------15.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 16:
+                        Console.WriteLine("--------16.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 17:
+                        Console.WriteLine("--------17.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 18:
+                        Console.WriteLine("--------18.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 19:
+                        Console.WriteLine("--------19.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 20:
+                        Console.WriteLine("--------20.--------");
+
                         goto Menu;
                     #endregion
 
