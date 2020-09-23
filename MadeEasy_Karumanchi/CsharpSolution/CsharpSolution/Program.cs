@@ -153,9 +153,16 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Reverse Linked List Using Recursion
                     case 9:
-                        Console.WriteLine("--------9.--------");
+                        Console.WriteLine("--------9.Reverse Linked List Using Recursion--------");
+                        ReverseLinkedListUsingRecursion rev2 = new ReverseLinkedListUsingRecursion();
+                        rev2.Append(10);
+                        rev2.Append(20);
+                        rev2.Append(30);
+                        rev2.Print();
+                        rev2.Reverse();
+                        rev2.Print();
                         goto Menu;
                     #endregion
 
