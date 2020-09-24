@@ -5,6 +5,9 @@ using System.Text;
 
 namespace CsharpSolution.Linked_Lists
 {
+    /*
+     * Time Complexity:O(n)
+     */
     class SwapNodesInLinkedlist
     {
         public class Node
@@ -28,6 +31,17 @@ namespace CsharpSolution.Linked_Lists
                 temp = temp.next;
             }
             Console.WriteLine();
+        }
+
+        public void PrintUsingRecursion(Node head)
+        {
+            Node temp = head;
+            if (temp == null)
+            {
+                return;
+            }
+            Console.Write(temp.data + " ");
+            PrintUsingRecursion(temp.next);
         }
 
         //insert at begining

@@ -208,16 +208,22 @@ namespace CsharpSolution
                         int[] ar13 = { 10, 12, 15, 16, 18, 20 };
                         foreach (var v in ar13)
                             swa.Push(v);
-                        swa.Print();
+                        swa.PrintUsingRecursion(swa.head);
+                        Console.WriteLine();
                         swa.Swap(12, 18);
                         swa.Print();
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Reverse Double Linked List
                     case 14:
-                        Console.WriteLine("--------14.--------");
-
+                        Console.WriteLine("--------14.Reverse Double Linked List--------");
+                        ReverseDoubleLinkedList rd = new ReverseDoubleLinkedList();
+                        int[] ar14 = { 10, 20, 30, 40 };
+                        foreach (var v in ar14)
+                            rd.Insert(v);
+                        rd.Print();
+                        rd.Reverse();
                         goto Menu;
                     #endregion
 

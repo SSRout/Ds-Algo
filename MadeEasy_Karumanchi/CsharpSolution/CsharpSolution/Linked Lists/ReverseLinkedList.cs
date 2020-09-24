@@ -16,7 +16,7 @@ namespace CsharpSolution.Linked_Lists
             public Node(T data)
             {
                 this.data = data;
-                this.next = null;
+                next = null;
             }
         }
 

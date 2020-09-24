@@ -27,32 +27,23 @@ namespace CsharpSolution.Linked_Lists
             head = null;
         }
 
-        protected Node reverseUtil(Node curr, Node prev)
+        public Node reverseUtil(Node temp)
         {
-            /* If last node mark it head*/
-            if (curr.next == null)
+            if (temp.next == null)
             {
-                head = curr;
-
-                /* Update next to prev node */
-                curr.next = prev;
-
+                head = temp;
                 return head;
             }
-
-            /* Save curr->next node for recursive call */
-            Node next = curr.next;
-
-            /* and update next ..*/
-            curr.next = prev;
-
-            reverseUtil(next, curr);
+            reverseUtil(temp.next);
+            Node cur = temp.next;
+            cur.next = temp;
+            temp.next = null;
             return head;
         }
 
         public void Reverse()
         {
-           head=reverseUtil(head, null);
+           head=reverseUtil(head);
         }
         //inser at end
         public void Append(int data)
