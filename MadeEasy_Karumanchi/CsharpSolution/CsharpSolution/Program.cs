@@ -201,10 +201,16 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Swap nodes in a linked list
                     case 13:
-                        Console.WriteLine("--------13.--------");
-
+                        Console.WriteLine("--------13.Swap nodes in a linked list--------");
+                        SwapNodesInLinkedlist swa = new SwapNodesInLinkedlist();
+                        int[] ar13 = { 10, 12, 15, 16, 18, 20 };
+                        foreach (var v in ar13)
+                            swa.Push(v);
+                        swa.Print();
+                        swa.Swap(12, 18);
+                        swa.Print();
                         goto Menu;
                     #endregion
 
