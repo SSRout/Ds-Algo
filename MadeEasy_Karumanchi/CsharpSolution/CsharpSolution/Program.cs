@@ -227,10 +227,16 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Reverse Pair Wise
                     case 15:
-                        Console.WriteLine("--------15.--------");
-
+                        Console.WriteLine("--------15.Reverse Pair Wise--------");
+                        ReverseLinkedListPairWise l15 = new ReverseLinkedListPairWise();
+                        int[] ar15 = { 10,20,30,40,50 };
+                        foreach (var v in ar15)
+                            l15.Push(v);
+                        l15.Print();
+                        l15.Reverse();
+                        l15.Print();
                         goto Menu;
                     #endregion
 
