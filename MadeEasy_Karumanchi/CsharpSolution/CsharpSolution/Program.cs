@@ -1,6 +1,7 @@
 ﻿using CsharpSolution.Linked_Lists;
 using Microsoft.VisualBasic.CompilerServices;
 using System;
+using System.Net.Http.Headers;
 
 namespace CsharpSolution
 {
@@ -240,10 +241,18 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Split circular linked List in 2 halfs
                     case 16:
-                        Console.WriteLine("--------16.--------");
-
+                        Console.WriteLine("--------16.Split circular linked List in 2 halfs--------");
+                        SplitCircularLinkedList_inTwoParts o16 = new SplitCircularLinkedList_inTwoParts();
+                        int[] ar16 = { 50, 60, 20, 30, 13, 40, 56, 73,10};
+                        foreach (var v in ar16)
+                            o16.push(v);
+                        o16.head.next.next.next.next.next.next.next.next.next = o16.head;
+                        o16.Print(o16.head);
+                        o16.SplitList(o16.head);
+                        o16.Print(o16.head1);
+                        o16.Print(o16.head2);
                         goto Menu;
                     #endregion
 
