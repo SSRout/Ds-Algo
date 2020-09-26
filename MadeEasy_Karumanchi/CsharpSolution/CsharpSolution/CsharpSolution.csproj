@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Arrays\" />
+    <Folder Include="Arrays_Strings\" />
+    <Folder Include="Graph\" />
+    <Folder Include="Dynamic Programming\" />
+    <Folder Include="Tree\" />
   </ItemGroup>
 
 </Project>

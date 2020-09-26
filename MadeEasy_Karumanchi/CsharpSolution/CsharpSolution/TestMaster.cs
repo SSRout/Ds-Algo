@@ -260,7 +260,7 @@ namespace CsharpSolution
                     case 17:
                         Console.WriteLine("--------17.Merge two Sorted Linked list--------");
                         Merge2SortedLinkedList l17 = new Merge2SortedLinkedList();
-                        l17.CreateList1();
+                        l17.CreateList1(l17.h1,l1);
                         l17.CreateList2();
                         l17.Print(l17.h1);
                         l17.Print(l17.h2);
