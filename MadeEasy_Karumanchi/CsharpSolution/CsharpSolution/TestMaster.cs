@@ -285,10 +285,17 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Stack using Array
                     case 19:
-                        Console.WriteLine("--------19.--------");
-
+                        Console.WriteLine("--------19.Stack using Array--------");
+                        StackUsingArray sc19 = new StackUsingArray(10);
+                        sc19.Push(10);
+                        sc19.Push(20);
+                        sc19.Push(30);
+                        sc19.Push(40);
+                        sc19.Print();
+                        sc19.Pop();
+                        sc19.Print();
                         goto Menu;
                     #endregion
 
