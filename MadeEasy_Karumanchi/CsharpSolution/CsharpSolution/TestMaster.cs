@@ -1,4 +1,5 @@
 ﻿using CsharpSolution.Linked_Lists;
+using CsharpSolution.Stack;
 using Microsoft.VisualBasic.CompilerServices;
 using System;
 using System.Net.Http.Headers;
@@ -260,7 +261,7 @@ namespace CsharpSolution
                     case 17:
                         Console.WriteLine("--------17.Merge two Sorted Linked list--------");
                         Merge2SortedLinkedList l17 = new Merge2SortedLinkedList();
-                        l17.CreateList1(l17.h1,l1);
+                        l17.CreateList1();
                         l17.CreateList2();
                         l17.Print(l17.h1);
                         l17.Print(l17.h2);
@@ -269,10 +270,18 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region CSharp Stack Collection 
                     case 18:
-                        Console.WriteLine("--------18.--------");
-
+                        Console.WriteLine("--------18.CSharp Stack Collection --------");
+                        StackCollectioninCsharp<int> o18 = new StackCollectioninCsharp<int>();
+                        int[] ar18 = { 10, 78, 34, 65 };
+                        foreach(var v in ar18)
+                            o18.Push(v);
+                        o18.Print();
+                        Console.WriteLine($"Count is :{o18.myStack.Count}");
+                        Console.WriteLine($"78 Is Present :{o18.myStack.Contains(78)}");
+                        o18.myStack.Pop();
+                        o18.Print();
                         goto Menu;
                     #endregion
 
