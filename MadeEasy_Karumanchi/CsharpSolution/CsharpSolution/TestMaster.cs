@@ -299,10 +299,19 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Stack Using Linked List
                     case 20:
-                        Console.WriteLine("--------20.--------");
-
+                        Console.WriteLine("--------20.Stack Using Linked List--------");
+                        StackUsingLinkedList<int> sc20 = new StackUsingLinkedList<int>();
+                        int[] ar20 = { 10, 20, 30, 40 };
+                        foreach (var v in ar20)
+                            sc20.Push(v);
+                        sc20.Print();
+                        sc20.Peek();
+                        sc20.Print();
+                        sc20.Pop();
+                        sc20.Print();
+                        Console.WriteLine($"Size Of Stack: {sc20.GetSize()}");
                         goto Menu;
                     #endregion
 

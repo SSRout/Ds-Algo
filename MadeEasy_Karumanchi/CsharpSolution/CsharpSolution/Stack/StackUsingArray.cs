@@ -46,7 +46,7 @@ namespace CsharpSolution.Stack
         {
             if (isEmpty())
                 throw new Exception("Stack is Empty");
-            int data = arrStack[top];
+            int data = Top();
             arrStack[top--]= -1;
             return data;
         }
