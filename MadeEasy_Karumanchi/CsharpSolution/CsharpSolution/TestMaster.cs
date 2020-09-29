@@ -315,6 +315,17 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
+                    #region Balanced Expression
+                    case 21:
+                        Console.WriteLine("--------21.Balanced Expression--------");
+                        BalancingSymbolPattern sc21 = new BalancingSymbolPattern();
+                        Console.WriteLine($"Expression is Balanced using Stack: {sc21.CheckPattern("[{(}]","Stack")}");
+                        Console.WriteLine($"Expression is Balanced  using Stack Adt: {sc21.CheckPattern("[{)}]","StackADT")}");
+                        Console.WriteLine($"Expression is Balanced using Stack: {sc21.CheckPattern("[{()}]", "Stack")}");
+                        Console.WriteLine($"Expression is Balanced  using Stack Adt: {sc21.CheckPattern("[{()}]", "StackADT")}");
+                        goto Menu;
+                    #endregion
+
                     #region Menu
                     default:
                         Console.Clear();
