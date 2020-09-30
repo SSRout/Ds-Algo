@@ -343,10 +343,12 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Binary Search
                     case 24:
-                        Console.WriteLine("--------24.--------");
-
+                        Console.WriteLine("--------24.Binary Search--------");
+                        BinarySearch o24 = new BinarySearch();
+                        int[] arr24 = { 5,10, 20, 30, 40 };
+                        Console.WriteLine(o24.BSEarch(arr24,0,arr24.Length-1, 40));
                         goto Menu;
                     #endregion
 
