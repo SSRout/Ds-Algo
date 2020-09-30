@@ -1,4 +1,5 @@
-﻿using CsharpSolution.Linked_Lists;
+﻿using CsharpSolution.Array_and_Strings;
+using CsharpSolution.Linked_Lists;
 using CsharpSolution.Stack;
 using Microsoft.VisualBasic.CompilerServices;
 using System;
@@ -233,7 +234,7 @@ namespace CsharpSolution
                     case 15:
                         Console.WriteLine("--------15.Reverse Pair Wise--------");
                         ReverseLinkedListPairWise l15 = new ReverseLinkedListPairWise();
-                        int[] ar15 = { 10,20,30,40,50 };
+                        int[] ar15 = { 10, 20, 30, 40, 50 };
                         foreach (var v in ar15)
                             l15.Push(v);
                         l15.Print();
@@ -246,7 +247,7 @@ namespace CsharpSolution
                     case 16:
                         Console.WriteLine("--------16.Split circular linked List in 2 halfs--------");
                         SplitCircularLinkedList_inTwoParts o16 = new SplitCircularLinkedList_inTwoParts();
-                        int[] ar16 = { 50, 60, 20, 30, 13, 40, 56, 73,10};
+                        int[] ar16 = { 50, 60, 20, 30, 13, 40, 56, 73, 10 };
                         foreach (var v in ar16)
                             o16.push(v);
                         o16.head.next.next.next.next.next.next.next.next.next = o16.head;
@@ -275,7 +276,7 @@ namespace CsharpSolution
                         Console.WriteLine("--------18.CSharp Stack Collection --------");
                         StackCollectioninCsharp<int> o18 = new StackCollectioninCsharp<int>();
                         int[] ar18 = { 10, 78, 34, 65 };
-                        foreach(var v in ar18)
+                        foreach (var v in ar18)
                             o18.Push(v);
                         o18.Print();
                         Console.WriteLine($"Count is :{o18.myStack.Count}");
@@ -319,10 +320,75 @@ namespace CsharpSolution
                     case 21:
                         Console.WriteLine("--------21.Balanced Expression--------");
                         BalancingSymbolPattern sc21 = new BalancingSymbolPattern();
-                        Console.WriteLine($"Expression is Balanced using Stack: {sc21.CheckPattern("[{(}]","Stack")}");
-                        Console.WriteLine($"Expression is Balanced  using Stack Adt: {sc21.CheckPattern("[{)}]","StackADT")}");
+                        Console.WriteLine($"Expression is Balanced using Stack: {sc21.CheckPattern("[{(}]", "Stack")}");
+                        Console.WriteLine($"Expression is Balanced  using Stack Adt: {sc21.CheckPattern("[{)}]", "StackADT")}");
                         Console.WriteLine($"Expression is Balanced using Stack: {sc21.CheckPattern("[{()}]", "Stack")}");
                         Console.WriteLine($"Expression is Balanced  using Stack Adt: {sc21.CheckPattern("[{()}]", "StackADT")}");
+                        goto Menu;
+                    #endregion
+
+                    #region Postfix Using Stack
+                    case 22:
+                        Console.WriteLine("--------22.Postfix Using Stack--------");
+                        PostfixImplimentationUsingStack sk22 = new PostfixImplimentationUsingStack();
+                        goto Menu;
+                    #endregion
+
+                    #region Max Sub Array Sum Using Kadens Algo
+                    case 23:
+                        Console.WriteLine("--------23.Max Sub Array Sum Using Kadens Algo--------");
+                        FindMaxSubArraySumUsingKadensAlgo o23 = new FindMaxSubArraySumUsingKadensAlgo();
+                        int[] arr23 = { 2, -1, -3, 4, -1, 7, -2 };
+                        Console.WriteLine(o23.MaxSub(arr23));
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 24:
+                        Console.WriteLine("--------24.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 25:
+                        Console.WriteLine("--------25.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 26:
+                        Console.WriteLine("--------26.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 27:
+                        Console.WriteLine("--------27.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 28:
+                        Console.WriteLine("--------28.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 29:
+                        Console.WriteLine("--------29.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 30:
+                        Console.WriteLine("--------30.--------");
+
                         goto Menu;
                     #endregion
 
