@@ -327,28 +327,25 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region Postfix Using Stack
+                    #region Postfix Expression Evaluation Using Stack
                     case 22:
-                        Console.WriteLine("--------22.Postfix Using Stack--------");
+                        Console.WriteLine("--------22.Postfix Expression Evaluation  Using Stack--------");
                         PostfixImplimentationUsingStack sk22 = new PostfixImplimentationUsingStack();
+                        Console.WriteLine($"Postfix Expression result is {sk22.EvaluatePostfixExpression("123*+5-")}");
                         goto Menu;
                     #endregion
 
-                    #region Max Sub Array Sum Using Kadens Algo
+                    #region MyRegion
                     case 23:
-                        Console.WriteLine("--------23.Max Sub Array Sum Using Kadens Algo--------");
-                        FindMaxSubArraySumUsingKadensAlgo o23 = new FindMaxSubArraySumUsingKadensAlgo();
-                        int[] arr23 = { 2, -1, -3, 4, -1, 7, -2 };
-                        Console.WriteLine(o23.MaxSub(arr23));
+                        Console.WriteLine("--------23.--------");
+
                         goto Menu;
                     #endregion
 
-                    #region Binary Search
+                    #region MyRegion
                     case 24:
-                        Console.WriteLine("--------24.Binary Search--------");
-                        BinarySearch o24 = new BinarySearch();
-                        int[] arr24 = { 5,10, 20, 30, 40 };
-                        Console.WriteLine(o24.BSEarch(arr24,0,arr24.Length-1, 40));
+                        Console.WriteLine("--------24.--------");
+
                         goto Menu;
                     #endregion
 
@@ -393,6 +390,24 @@ namespace CsharpSolution
 
                         goto Menu;
                     #endregion
+
+                    //#region Max Sub Array Sum Using Kadens Algo
+                    //case 23:
+                    //    Console.WriteLine("--------23.Max Sub Array Sum Using Kadens Algo--------");
+                    //    FindMaxSubArraySumUsingKadensAlgo o23 = new FindMaxSubArraySumUsingKadensAlgo();
+                    //    int[] arr23 = { 2, -1, -3, 4, -1, 7, -2 };
+                    //    Console.WriteLine(o23.MaxSub(arr23));
+                    //    goto Menu;
+                    //#endregion
+
+                    //#region Binary Search
+                    //case 24:
+                    //    Console.WriteLine("--------24.Binary Search--------");
+                    //    BinarySearch o24 = new BinarySearch();
+                    //    int[] arr24 = { 5, 10, 20, 30, 40 };
+                    //    Console.WriteLine(o24.BSEarch(arr24, 0, arr24.Length - 1, 40));
+                    //    goto Menu;
+                    //#endregion
 
                     #region Menu
                     default:
