@@ -335,10 +335,13 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Infix to Postfix
                     case 23:
-                        Console.WriteLine("--------23.--------");
-
+                        Console.WriteLine("--------23.Infix to Postfix--------");
+                        InfixToPostFix o23 = new InfixToPostFix();
+                        string exp = "a+b*(c^d-e)^(f+g*h)-i";
+                        //string exp ="a*b-(c+d)-e";
+                        Console.WriteLine($"Infix {exp} of  Postfix is : {o23.ConvertInfixToPostFix(exp)}");
                         goto Menu;
                     #endregion
 
