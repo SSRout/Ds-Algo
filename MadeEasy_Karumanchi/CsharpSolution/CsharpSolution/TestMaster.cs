@@ -355,17 +355,23 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Convert Prefix and Postfix to Infix
                     case 25:
-                        Console.WriteLine("--------25.--------");
-
+                        Console.WriteLine("--------25.Convert Prefix and Postfix to Infix--------");
+                        ConvertToInfix o25 = new ConvertToInfix();
+                        string exppre25 = "*-A/BC-/AKL";
+                        Console.WriteLine($"Pefix {exppre25} of Infix is {o25.ConvertPreToInfix(exppre25.Replace(" ",string.Empty))}");
+                        string expost25 = " ab*c+";
+                        Console.WriteLine($"Postfix {expost25} of Infix is {o25.ConvertPostToInfix(expost25.Replace(" ", string.Empty))}");
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Convert Post to Pre and Viceversa
                     case 26:
-                        Console.WriteLine("--------26.--------");
-
+                        Console.WriteLine("--------26.Convert Post to Pre and Viceversa--------");
+                        ConvertPreToPost_PostToPre o26 = new ConvertPreToPost_PostToPre();
+                        string exp26 = "*-A/BC-/AKL";
+                        Console.WriteLine(o26.ConvertExpression(exp26.Replace(" ",string.Empty)));
                         goto Menu;
                     #endregion
 
