@@ -341,14 +341,17 @@ namespace CsharpSolution
                         InfixToPostFix o23 = new InfixToPostFix();
                         string exp = "a+b*(c^d-e)^(f+g*h)-i";
                         //string exp ="a*b-(c+d)-e";
-                        Console.WriteLine($"Infix {exp} of  Postfix is : {o23.ConvertInfixToPostFix(exp)}");
+                        Console.WriteLine($"Infix {exp} of  Postfix is : {o23.ConvertInfixToPostFix(exp.Replace(" ", string.Empty))}");
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Infix To Prefix
                     case 24:
-                        Console.WriteLine("--------24.--------");
-
+                        Console.WriteLine("--------24.Infix To Prefix--------");
+                        InfixToPrefix o24 = new InfixToPrefix();
+                        //string exp24 = "a*b-(c+d)-e";
+                        string exp24 = "((a/b)+c)-(d+(e*f))";
+                        Console.WriteLine($"Infix {exp24} of Prefix is {o24.ConvertInfixToPrefix(exp24.Replace(" ", string.Empty))}");
                         goto Menu;
                     #endregion
 

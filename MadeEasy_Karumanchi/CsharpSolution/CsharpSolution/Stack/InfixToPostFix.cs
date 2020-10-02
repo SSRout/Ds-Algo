@@ -6,7 +6,7 @@ namespace CsharpSolution.Stack
 {
     class InfixToPostFix
     {
-
+        //TC:O(n)
         public int getPrecrdence(char ch)
         {
             switch (ch)
