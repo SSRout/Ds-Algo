@@ -25,6 +25,8 @@ namespace CsharpSolution
                         break;
                     #endregion
 
+                    //Linked List 
+
                     #region Single Linked List
                     case 1:
 
@@ -271,6 +273,8 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
+                    //Stack
+
                     #region CSharp Stack Collection 
                     case 18:
                         Console.WriteLine("--------18.CSharp Stack Collection --------");
@@ -360,7 +364,7 @@ namespace CsharpSolution
                         Console.WriteLine("--------25.Convert Prefix and Postfix to Infix--------");
                         ConvertToInfix o25 = new ConvertToInfix();
                         string exppre25 = "*-A/BC-/AKL";
-                        Console.WriteLine($"Pefix {exppre25} of Infix is {o25.ConvertPreToInfix(exppre25.Replace(" ",string.Empty))}");
+                        Console.WriteLine($"Pefix {exppre25} of Infix is {o25.ConvertPreToInfix(exppre25.Replace(" ", string.Empty))}");
                         string expost25 = " ab*c+";
                         Console.WriteLine($"Postfix {expost25} of Infix is {o25.ConvertPostToInfix(expost25.Replace(" ", string.Empty))}");
                         goto Menu;
@@ -371,14 +375,16 @@ namespace CsharpSolution
                         Console.WriteLine("--------26.Convert Post to Pre and Viceversa--------");
                         ConvertPreToPost_PostToPre o26 = new ConvertPreToPost_PostToPre();
                         string exp26 = "*-A/BC-/AKL";
-                        Console.WriteLine(o26.ConvertExpression(exp26.Replace(" ",string.Empty)));
+                        Console.WriteLine(o26.ConvertExpression(exp26.Replace(" ", string.Empty)));
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Sort Stack using Recursion
                     case 27:
-                        Console.WriteLine("--------27.--------");
-
+                        Console.WriteLine("--------27.Sort Stack using Recursion--------");
+                        string str27 = "-3 14 18 -5 30";
+                        SortStack o27 = new SortStack(str27);
+                       o27.PrintStack();
                         goto Menu;
                     #endregion
 
