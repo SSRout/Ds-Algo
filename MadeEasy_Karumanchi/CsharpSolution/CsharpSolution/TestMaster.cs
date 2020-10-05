@@ -388,10 +388,17 @@ namespace CsharpSolution
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Get Min From Stack with O(1)
                     case 28:
-                        Console.WriteLine("--------28.--------");
-
+                        Console.WriteLine("--------28. Get Min From Stack with O(1)--------");
+                        GetMinStack o28 = new GetMinStack();
+                        o28.Push(2);
+                        o28.Push(4);
+                        o28.Push(6);
+                        o28.Push(1);
+                        o28.Push(5);
+                        Console.WriteLine("Stack is 5,1,6,4,2");
+                        Console.WriteLine($"min value in stack is {o28.GetMin()} and top of stack is {o28.Top()}");
                         goto Menu;
                     #endregion
 
