@@ -399,13 +399,28 @@ namespace CsharpSolution
                         o28.Push(5);
                         Console.WriteLine("Stack is 5,1,6,4,2");
                         Console.WriteLine($"min value in stack is {o28.GetMin()} and top of stack is {o28.Top()}");
+                        o28.Pop();
+                        o28.Pop();
+                        Console.WriteLine("After 2 Pops");
+                        Console.WriteLine($"min value in stack is {o28.GetMin()} and top of stack is {o28.Top()}");
                         goto Menu;
                     #endregion
 
-                    #region MyRegion
+                    #region Get MAX From Stack with O(1)
                     case 29:
-                        Console.WriteLine("--------29.--------");
-
+                        Console.WriteLine("--------29.Get MAX From Stack with O(1)--------");
+                        GetMaxStack o29 = new GetMaxStack();
+                        o29.Push(2);
+                        o29.Push(7);
+                        o29.Push(6);
+                        o29.Push(8);
+                        o29.Push(5);
+                        Console.WriteLine("Stack is 5,8,6,7,2");
+                        Console.WriteLine($"Max value in stack is {o29.GetMax()} and top of stack is {o29.GetTop()}");
+                        o29.Pop();
+                        o29.Pop();
+                        Console.WriteLine("After 2 Pops");
+                        Console.WriteLine($"Max value in stack is {o29.GetMax()} and top of stack is {o29.GetTop()}");
                         goto Menu;
                     #endregion
 

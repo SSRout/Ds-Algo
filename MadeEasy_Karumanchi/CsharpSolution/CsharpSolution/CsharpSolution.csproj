@@ -9,7 +9,6 @@
     <Folder Include="Graph\" />
     <Folder Include="Dynamic Programming\" />
     <Folder Include="Queue\" />
-    <Folder Include="Tree\" />
   </ItemGroup>
 
 </Project>
