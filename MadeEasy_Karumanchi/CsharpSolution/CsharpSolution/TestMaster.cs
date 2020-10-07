@@ -11,9 +11,23 @@ namespace CsharpSolution
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"\t=============================MENUS=============================\n" +
+                                             $"\t\t 1.Arrasy And Strings\n" +
+                                             $"\t\t 2.Linked List\n" +
+                                             $"\t\t 3.Stack\n" +
+                                             $"\t\t 4.Queue\n" +
+                                             $"\t\t 5.Tree\n" +
+                                             $"\t\t 6.Graph\n" +
+                                             $"\t\t 7.Advanced Data Structure\n" +
+                                             $"\t\t 8.Dynamic Programing\n" +
+                              $"\t================================================================");
+            Menus m = new Menus();
+            int items = Convert.ToInt32(Console.ReadLine());
+            m.DisplayMenu(items);
             try
             {
             Menu:
+                
                 Console.WriteLine("Press 0 For Exit.");
                 Console.WriteLine("Enter Question No: [1-100]\n");
                 int options = int.Parse(Console.ReadLine());
@@ -426,7 +440,77 @@ namespace CsharpSolution
 
                     #region MyRegion
                     case 30:
-                        Console.WriteLine("--------30.--------");
+                        Console.WriteLine($"--------{options}.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 31:
+                        Console.WriteLine($"--------{options}.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 32:
+                        Console.WriteLine($"--------{options}.--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 33:
+                        Console.WriteLine("--------"+options+".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 34:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 35:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 36:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 37:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 38:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 39:
+                        Console.WriteLine("--------" + options + ".--------");
+
+                        goto Menu;
+                    #endregion
+
+                    #region MyRegion
+                    case 40:
+                        Console.WriteLine("--------" + options + ".--------");
 
                         goto Menu;
                     #endregion
