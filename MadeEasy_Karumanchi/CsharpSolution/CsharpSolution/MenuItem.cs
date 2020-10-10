@@ -8,7 +8,7 @@ namespace CsharpSolution
 
     public class Menus
     {
-        public void DisplayMenu(int items)
+        public void DisplayProgramsTopicWise(int items)
         {
             MenuItemEnum chocice = (MenuItemEnum)items;
             switch (chocice)
@@ -47,27 +47,87 @@ namespace CsharpSolution
         public void DisplayArrayAndString()
         {
 
-            Console.WriteLine("Select Question[1-2]");
+            Console.WriteLine("Select Question[1-10]");
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
                 #region Max Sub Array Sum Using Kadens Algo
                 case 1:
                     Console.WriteLine("--------" + choice + ".Max Sub Array Sum Using Kadens Algo--------");
-                    FindMaxSubArraySumUsingKadensAlgo o23 = new FindMaxSubArraySumUsingKadensAlgo();
-                    int[] arr23 = { 2, -1, -3, 4, -1, 7, -2 };
-                    Console.WriteLine(o23.MaxSub(arr23));
+                    FindMaxSubArraySumUsingKadensAlgo o1 = new FindMaxSubArraySumUsingKadensAlgo();
+                    int[] arr1 = { 2, -1, -3, 4, -1, 7, -2 };
+                    Console.WriteLine(o1.MaxSub(arr1));
                     break;
                 #endregion
 
                 #region Binary Search
                 case 2:
                     Console.WriteLine("--------" + choice + ".Binary Search--------");
-                    BinarySearch o24 = new BinarySearch();
-                    int[] arr24 = { 5, 10, 20, 30, 40 };
-                    Console.WriteLine(o24.BSEarch(arr24, 0, arr24.Length - 1, 40));
+                    BinarySearch o2 = new BinarySearch();
+                    int[] arr2 = { 5, 10, 20, 30, 40 };
+                    Console.WriteLine(o2.BSEarch(arr2, 0, arr2.Length - 1, 40));
                     break;
                 #endregion
+
+                #region Check Palindrome
+                case 3:
+                    Console.WriteLine("--------" + choice + ".Check Palindrome--------");
+                    StringPalindrome o3 = new StringPalindrome();
+                    Console.WriteLine("Enter a String to check Palindrome or not");
+                    string str3 = Console.ReadLine();
+                    Console.WriteLine($"{str3} is palindrome {o3.CheckPalindrome(str3)}");
+                    break;
+                #endregion
+
+                #region
+                case 4:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 5:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 6:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 7:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 8:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 9:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 10:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Inavalid Choice.");
                     break;
@@ -487,6 +547,28 @@ namespace CsharpSolution
                     Console.WriteLine($"Max value in stack is {sk12.GetMax()} and top of stack is {sk12.GetTop()}");
                     break;
                 #endregion
+
+                #region
+                case 13:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 14:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 15:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Inavalid Choice.");
                     break;
@@ -512,8 +594,78 @@ namespace CsharpSolution
 
             Console.WriteLine("Select Question[1-12]");
             int choice = int.Parse(Console.ReadLine());
+
             switch (choice)
             {
+                #region
+                case 1:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 2:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 3:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 4:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 5:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 6:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 7:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 8:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 9:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 10:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
                 default:
                     Console.WriteLine("Oops! Invalid Choice.");
                     break;
@@ -527,6 +679,76 @@ namespace CsharpSolution
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
+                #region
+                case 1:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 2:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 3:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 4:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 5:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 6:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 7:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 8:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 9:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 10:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Invalid Choice.");
                     break;
@@ -540,6 +762,76 @@ namespace CsharpSolution
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
+                #region
+                case 1:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 2:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 3:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 4:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 5:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 6:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 7:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 8:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 9:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 10:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Invalid Choice.");
                     break;
@@ -553,6 +845,76 @@ namespace CsharpSolution
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
+                #region
+                case 1:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 2:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 3:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 4:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 5:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 6:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 7:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 8:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 9:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
+                #region
+                case 10:
+                    Console.WriteLine("--------" + choice + ".--------");
+
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Invalid Choice.");
                     break;
