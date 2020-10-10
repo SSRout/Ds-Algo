@@ -36,7 +36,7 @@ namespace CsharpSolution
                         Console.WriteLine("---✔️🍺 Happy Coding 👍😊---\n---Happy Learning See You Latter---");
                         break;
                     #endregion
-
+                        
                     #region Array And String Collection 
                     case 1:
                         Console.WriteLine($"Array And Strings Problems");
@@ -92,8 +92,8 @@ namespace CsharpSolution
                         m.DisplayDynamicProgramming();
                         goto Menu;
                     #endregion
-        
-                    #region Menu
+
+                    #region Invalid
                     default:
                         Console.Clear();
                         Console.WriteLine("Oops! Invalid Option Typed.");
