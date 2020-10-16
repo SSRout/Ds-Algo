@@ -6,7 +6,7 @@ namespace CsharpSolution.Linked_Lists
 {
 
     /*
-     * Time complexity of the above method is O(n)
+     * Time complexity of the above method is O(n) ans space complexty O(n)
      */
     class CheckLinkedListPalindromeUsingStack<T>
     {
