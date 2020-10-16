@@ -137,7 +137,7 @@ namespace CsharpSolution
         public void DisplayLinkedList()
         {
 
-            Console.WriteLine("Select Question[1-17]");
+            Console.WriteLine("Select Question[1-18]");
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
@@ -386,6 +386,20 @@ namespace CsharpSolution
                     l17.Print(l17.head);
                     break;
                 #endregion
+
+                #region Plindrome check using Single linked list
+                case 18:
+                    Console.WriteLine("--------"+choice+".Merge two Sorted Linked list--------");
+                    CheckLinkedLisPalindromeUsingSingleLinkedList<int> l18 = new CheckLinkedLisPalindromeUsingSingleLinkedList<int>();
+                    l18.InsertFirst(1);
+                    l18.InsertFirst(2);
+                    l18.InsertFirst(2);
+                    l18.InsertFirst(1);
+                    l18.Print();
+                     l18.CheckPalindrome();
+                    break;
+                #endregion
+
                 default:
                     Console.WriteLine("Oops! Invalid Choice.");
                     break;
