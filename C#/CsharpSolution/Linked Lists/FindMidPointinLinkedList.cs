@@ -6,5 +6,9 @@ namespace CsharpSolution.Linked_Lists
 {
     class FindMidPointinLinkedList
     {
+        public class Node
+        {
+            public int data;
+        }
     }
 }
