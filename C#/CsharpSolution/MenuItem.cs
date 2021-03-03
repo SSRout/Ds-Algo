@@ -2,6 +2,7 @@
 using CsharpSolution.Array_and_Strings;
 using CsharpSolution.Linked_Lists;
 using CsharpSolution.Stack;
+using CsharpSolution.Tree;
 
 namespace CsharpSolution
 {
@@ -614,7 +615,13 @@ namespace CsharpSolution
                 #region
                 case 1:
                     Console.WriteLine("--------" + choice + ".--------");
-
+                    TreeDs t1 = new TreeDs();
+                    var node = t1.CreateNode(10);
+                    t1.AddToTree(20,node);
+                    t1.AddToTree(5, node);
+                    t1.AddToTree(7, node);
+                    t1.AddToTree(3, node);
+                    t1.AddToTree(11, node);
                     break;
                 #endregion
 
