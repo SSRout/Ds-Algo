@@ -4,33 +4,43 @@ using System.Text;
 
 namespace CsharpSolution.Tree
 {
-    class TreeNode<T> where T : IComparable
+    public class TreeNode
     {
-        public T data;
-        public TreeNode<T> leftChild;
-        public TreeNode<T> rightChild;
-        public TreeNode(T d)
+        public int data;
+        public TreeNode leftChild;
+        public TreeNode rightChild;
+
+        public TreeNode(int d)
         {
             this.data = d;
             leftChild = rightChild = null;
         }
+    }
 
-        public TreeNode<T> tree = null;
+    public class TreeDs { 
 
-        public void AddToTree(T data)
+        public TreeNode tree;
+        
+        public TreeNode CreateNode(int data)
         {
-            if (tree.data == null)
+            tree = new TreeNode(data);
+            return tree;
+        }
+        public TreeNode AddToTree(int data,TreeNode tree)
+        {
+            if (tree == null)
             {
-                tree = new TreeNode<T>(data);
+                tree = CreateNode(data);
             }
-            else if (tree.data.CompareTo(data)>0)
+            else if (Convert.ToInt32(tree.data) > Convert.ToInt32(data))
             {
-                tree.leftChild= new TreeNode<T>(data);
+                tree.leftChild = AddToTree(data, tree.leftChild);
             }
             else
             {
-                tree.rightChild = new TreeNode<T>(data);
+                tree.rightChild = AddToTree(data, tree.rightChild);
             }
+            return tree;
         }
     }
 }
