@@ -622,6 +622,16 @@ namespace CsharpSolution
                     t1.AddToTree(7, node);
                     t1.AddToTree(3, node);
                     t1.AddToTree(11, node);
+                    t1.AddToTree(12, node);
+                    t1.AddToTree(25, node);
+                    Console.WriteLine("InOrder Traversal");
+                    t1.Travers_Inorder(node);
+
+                    Console.WriteLine("\nPreOrder Traversal");
+                    t1.Travers_Preorder(node);
+
+                    Console.WriteLine("\nPostOrder Traversal");
+                    t1.Travers_Postorder(node);
                     break;
                 #endregion
 
