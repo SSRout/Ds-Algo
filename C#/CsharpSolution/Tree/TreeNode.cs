@@ -42,5 +42,38 @@ namespace CsharpSolution.Tree
             }
             return tree;
         }
+
+        //L Root R
+        public void Travers_Inorder(TreeNode tree)
+        {
+            if (tree != null)
+            {
+                Travers_Inorder(tree.leftChild);
+                Console.Write(tree.data + " ");
+                Travers_Inorder(tree.rightChild);
+            }
+        }
+
+        //Root L R
+        public void Travers_Preorder(TreeNode tree)
+        {
+            if (tree != null)
+            {
+                Console.Write(tree.data + " ");
+                Travers_Preorder(tree.leftChild);
+                Travers_Preorder(tree.rightChild);
+            }
+        }
+
+        //L R Root
+        public void Travers_Postorder(TreeNode tree)
+        {
+            if (tree != null)
+            {
+                Travers_Postorder(tree.leftChild);
+                Travers_Postorder(tree.rightChild);
+                Console.Write(tree.data + " ");
+            }
+        }
     }
 }
