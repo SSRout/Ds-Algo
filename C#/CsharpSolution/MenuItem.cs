@@ -82,8 +82,9 @@ namespace CsharpSolution
 
                 #region
                 case 4:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Bubble Sort--------");
+                    int[] arr = { 1,2,3,4 };
+                    BubbleSort o4 = new BubbleSort(arr, arr.Length);
                     break;
                 #endregion
 
