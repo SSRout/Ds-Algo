@@ -90,8 +90,8 @@ namespace CsharpSolution
 
                 #region
                 case 5:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Insertion Sort--------");
+                    var o5 = new InsertionSort(new int[] { 8, 4, 1, 5 });
                     break;
                 #endregion
 
