@@ -4,6 +4,7 @@ using System.Text;
 
 namespace CsharpSolution.Array_and_Strings
 {
+    //O(n^2)
     public class InsertionSort
     {
         public InsertionSort(int[] arr)

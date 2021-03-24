@@ -97,8 +97,8 @@ namespace CsharpSolution
 
                 #region
                 case 6:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Selection sort--------");
+                    var o6 = new SelectionSort(new int[] {4,6,9,2,3,1});
                     break;
                 #endregion
 
