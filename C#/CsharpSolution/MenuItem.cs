@@ -80,7 +80,7 @@ namespace CsharpSolution
                     break;
                 #endregion
 
-                #region
+                #region Bubble Sort
                 case 4:
                     Console.WriteLine("--------" + choice + ".Bubble Sort--------");
                     int[] arr = { 1,2,3,4 };
@@ -88,7 +88,7 @@ namespace CsharpSolution
                     break;
                 #endregion
 
-                #region
+                #region Insertion Sort
                 case 5:
                     Console.WriteLine("--------" + choice + ".Insertion Sort--------");
                     var o5 = new InsertionSort(new int[] { 8, 4, 1, 5 });
