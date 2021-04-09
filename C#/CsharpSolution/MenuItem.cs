@@ -97,15 +97,15 @@ namespace CsharpSolution
 
                 #region Selection sort
                 case 6:
-                    Console.WriteLine("--------" + choice + ".Selection sort--------");
+                    Console.WriteLine("--------" + choice + ".Selection Sort--------");
                     var o6 = new SelectionSort(new int[] {4,6,9,2,3,1});
                     break;
                 #endregion
 
-                #region
+                #region Quick Sort
                 case 7:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Quick Sort--------");
+                    var o7 = new SelectionSort(new int[] { 4, 6, 9, 2, 3, 1 });
                     break;
                 #endregion
 
@@ -615,7 +615,7 @@ namespace CsharpSolution
             {
                 #region
                 case 1:
-                    Console.WriteLine("--------" + choice + ".--------");
+                    Console.WriteLine("--------" + choice + ".Tree--------");
                     TreeDs t1 = new TreeDs();
                     var node = t1.CreateNode(10);
                     t1.AddToTree(20,node);
