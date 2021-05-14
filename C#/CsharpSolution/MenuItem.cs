@@ -109,10 +109,10 @@ namespace CsharpSolution
                     break;
                 #endregion
 
-                #region
+                #region Merge Sort
                 case 8:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Merge Sort--------");
+                    var o8 = new MergeSort(new int[] { 4, 6, 9, 2, 3, 1 });
                     break;
                 #endregion
 
