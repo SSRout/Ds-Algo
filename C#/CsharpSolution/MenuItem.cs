@@ -714,15 +714,15 @@ namespace CsharpSolution
             {
                 #region
                 case 1:
-                    Console.WriteLine("--------" + choice + ".--------");
+                    Console.WriteLine("--------" + choice + ".Graph DFS--------");
                     GraphDFSDemo dfs = new GraphDFSDemo();
                     break;
                 #endregion
 
                 #region
                 case 2:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".Graph BFS--------");
+                    GraphBFSDemo bfs = new GraphBFSDemo();
                     break;
                 #endregion
 
