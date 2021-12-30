@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Graph\" />
     <Folder Include="Dynamic Programming\" />
     <Folder Include="Queue\" />
   </ItemGroup>
