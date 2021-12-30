@@ -1,5 +1,6 @@
 ﻿using System;
 using CsharpSolution.Array_and_Strings;
+using CsharpSolution.Graph;
 using CsharpSolution.Linked_Lists;
 using CsharpSolution.Stack;
 using CsharpSolution.Tree;
@@ -714,7 +715,7 @@ namespace CsharpSolution
                 #region
                 case 1:
                     Console.WriteLine("--------" + choice + ".--------");
-
+                    GraphDFSDemo dfs = new GraphDFSDemo();
                     break;
                 #endregion
 
