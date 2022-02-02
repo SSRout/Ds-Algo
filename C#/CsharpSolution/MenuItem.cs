@@ -119,8 +119,8 @@ namespace CsharpSolution
 
                 #region
                 case 9:
-                    Console.WriteLine("--------" + choice + ".--------");
-
+                    Console.WriteLine("--------" + choice + ".String Reverse--------");
+                    Console.WriteLine($"Test the String Reverse! : { ReverseString.Reverse("Test the String Reverse!")}");
                     break;
                 #endregion
 
